@@ -23,14 +23,14 @@ button.addEventListener("click", () => {
       const types = data.types.map(t => t.type.name).join(", ");
 
       result.innerHTML = `
-        <p id="border">
+        <div id="border">
             <img src="${data.sprites.front_default}"><br>
             <strong>Name:</strong> ${data.name}<br>
             <strong>ID:</strong> ${data.id}<br>
             <strong>Types:</strong> ${types}<br>
             <strong>Height:</strong> ${data.height}<br>
             <strong>Weight:</strong> ${data.weight}
-        </p>
+        </div>
       `;
     })
     .catch(error => {

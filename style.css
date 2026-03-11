@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
+    background-color: #f0f0f0;
 }
 
 .container {
@@ -13,12 +14,30 @@ body {
 }
 
 #border{
-    border-style: solid;
-    border-width: 3px;
-    border-color: rgb(84, 83, 84);
-    border-radius: 5px;
+    width: 250px;
+    height: 220px;
+
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
     padding: 16px;
-    max-width: 175px;
-    background: #c9c8c8;
+    max-width: 400px;
     text-align: center;
+}
+
+.glass {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+#result {
+    margin-top: 20px;
 }
